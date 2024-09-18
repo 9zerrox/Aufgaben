@@ -9,10 +9,14 @@ public class ASCIIHourglass {
         int number = scanner.nextInt();
 
         int i = number;
-        while (i > 0){
-            System.out.print("*");
+        while (i > 0) {
+            int j = i;
+            while (j > 0) {
+                System.out.print("*");
+                j--;
+            }
+            System.out.println();
             i--;
-            int j = 0;
-        }
         }
     }
+}
