@@ -10,6 +10,6 @@ public class circle {
         float pi = 3.14F;
         float n = number*number;
         float result = pi * n;
-        System.out.println("Der Kreis hat eine Fläche von" + result);
+        System.out.println("Der Kreis hat eine Fläche von " + result);
     }
 }
