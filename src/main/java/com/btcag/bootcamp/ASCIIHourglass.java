@@ -28,6 +28,6 @@ public class ASCIIHourglass {
             }
             System.out.println();
             f++;
+        }
     }
-}
 }
