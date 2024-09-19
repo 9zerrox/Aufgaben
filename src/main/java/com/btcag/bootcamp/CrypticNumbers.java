@@ -6,19 +6,19 @@ public class CrypticNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bitte die Zahl eingeben: ");
-        int n = scanner.nextInt();
+        Long n = scanner.nextLong();
         System.out.println("Bitte Passwort (ZAHL) eingeben: ");
-        int i = scanner.nextInt();
+        Long i = scanner.nextLong();
 
-        int j = (n * i) * 2;
+        Long j = (n * i) * 2;
         System.out.println("Das verschlüsselte Passwort lautet: "+j);
 
         System.out.println("Bitte die Zahl eingeben: ");
-        int c = scanner.nextInt();
+        Long c = scanner.nextLong();
         System.out.println("Bitte Passwort (ZAHL) eingeben: ");
-        int p = scanner.nextInt();
+        Long p = scanner.nextLong();
 
-        int r = ( c / p ) / 2;
+        Long r = ( c / p ) / 2;
         System.out.println("Das Passwort lautet: "+r);
     }
 }
