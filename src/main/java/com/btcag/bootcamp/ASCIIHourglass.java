@@ -19,9 +19,9 @@ public class ASCIIHourglass {
             i--;
         }
 
-        int f = 0;
+        int f = 1;
         while (f <= number) {
-            int l = 0;
+            int l = 1;
             while (l <= f) {
                 System.out.print("*");
                 l++;
