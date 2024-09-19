@@ -16,6 +16,6 @@ public class Rectangular {
 
         System.out.println("Das Ergebnis lautet" + result);
 
-        }
     }
+}
 
