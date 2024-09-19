@@ -9,12 +9,12 @@ public class DecimalToBinary {
         int decimal = scanner.nextInt();
         String result = "";
 
-        while (decimal > 0){
+        while (decimal > 0) {
             int resultModulo = decimal % 2;
             result = resultModulo + result;
             decimal = decimal / 2;
         }
 
-        System.out.print("Das Ergebnis lautet:"+ result);
+        System.out.print("Das Ergebnis lautet:" + result);
     }
 }
