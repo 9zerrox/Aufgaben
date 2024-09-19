@@ -18,5 +18,16 @@ public class ASCIIHourglass {
             System.out.println();
             i--;
         }
+
+        int f = 0;
+        while (f <= number) {
+            int l = 0;
+            while (l <= f) {
+                System.out.print("*");
+                l++;
+            }
+            System.out.println();
+            f++;
     }
+}
 }
