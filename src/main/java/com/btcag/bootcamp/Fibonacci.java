@@ -12,9 +12,9 @@ public class Fibonacci {
         int i = 0;
         int j = 1;
 
-        System.out.println("Das Ergebnis lautet: "+ i);
+        System.out.println("Das Ergebnis lautet: " + i);
 
-        while (j < n){
+        while (j < n) {
             System.out.println(j);
             int c = j;
             j = i + j;
