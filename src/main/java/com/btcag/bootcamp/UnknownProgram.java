@@ -11,13 +11,13 @@ public class UnknownProgram {
         long value2 = readIn.nextLong();
 
         long result = 0;
-        while (value1-- >0){ /* während value1 -1 größer als 0 ist wird die nächste Schleife ausgeführt. */
+        while (value1-- > 0) { /* während value1 -1 größer als 0 ist wird die nächste Schleife ausgeführt. */
             long tmp = value2;
-            while (tmp-- >0){ /* während value2 -1 größer ist als 0 wird die schleife ausgeführt */
+            while (tmp-- > 0) { /* während value2 -1 größer ist als 0 wird die schleife ausgeführt */
                 result += 1;
             }
         }
-        System.out.println("Result: "+result);
+        System.out.println("Result: " + result);
     }
 }
 
