@@ -8,9 +8,9 @@ public class ASCIISquare {
         System.out.println("Groesse des Vierecks: ");
         int number = scanner.nextInt();
         int i = 0;
-        while(i < number){
+        while (i < number) {
             int j = 0;
-            while (j < number){
+            while (j < number) {
                 System.out.print("*");
                 j++;
             }
