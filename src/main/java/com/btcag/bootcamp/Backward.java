@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class Backward {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Gebe eine positive ganze Zahl ein:");
+        System.out.println("Bitte eine Zahl eingeben:");
         int number = scanner.nextInt();
-
-        long
+        int result = 0;
+        while (number != 0) {
+            int zahl = number % 10;
+            result = result * 10 + zahl;
+            number /= 10;
+        }
+        System.out.println("Rückwärts: " + result);
     }
 }
+
