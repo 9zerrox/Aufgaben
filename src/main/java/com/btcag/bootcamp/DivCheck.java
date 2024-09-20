@@ -14,7 +14,7 @@ public class DivCheck {
 
         int result = 0;
 
-        while (result < maxnumber){
+        while (result < maxnumber) {
             System.out.println(result);
             result += divisor;
         }
