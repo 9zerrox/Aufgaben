@@ -8,7 +8,7 @@ public class PrimeFactorization {
         int n = scanner.nextInt();
         int i = 0;
         while (i != n) {
-            int x = n/n
+            int x = n / n;
         }
     }
 }
