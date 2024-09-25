@@ -21,9 +21,9 @@ public class ImmerPositiv {
         while (n < 0) {
             n++;
             i++;
-            int result = i+n;
-            System.out.println(result);
         }
+        int result = i+n;
+        System.out.println(result);
         System.out.println(n);
     }
 }
