@@ -3,7 +3,7 @@ package com.btcag.bootcamp;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class VierGewinnt {
+public class fourconnects {
     public static Boolean winner;
     public static Boolean loser;
     public static Boolean state;
@@ -68,7 +68,9 @@ public class VierGewinnt {
         while (!usernameCheck.equals(username) && !passwordCheck.equals(password));
     }
 
-    public static void playField(){
+    /* Spielfeld wird erstellt */
+
+    public static void playField() {
         String field = "[ ]";
         String chipRed = "[x]";
         String chipBlue = "[o]";
@@ -77,14 +79,14 @@ public class VierGewinnt {
 
         String[][] playfield = new String[rows][columns];
 
-        for (int i = 0; i < rows; i++){
-            for (int j = 0; j < columns; j++){
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
                 playfield[i][j] = field;
             }
         }
 
-        for (int i = 0; i < rows; i++){
-            for (int j = 0; j < columns; j++){
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
                 System.out.print(playfield[i][j] + " ");
             }
             System.out.println();
@@ -93,4 +95,14 @@ public class VierGewinnt {
         System.out.print(" 1   2   3   4   5   6   7");
     }
 
+    /* benutzer kann einen spielzug machen */
+
+    public static void userMove() {
+        System.out.println("Bitte mache deinen ersten Zug: \n");
+        int slot;
+        do {
+            slot = readIn.nextInt();
+        }
+        while (slot >= 8 && slot < 1);
+    }
 }
