@@ -13,11 +13,11 @@ public class VierGewinnt {
 
 
     public static void main(String[] args) {
-        welcomePlayer();
+       /* welcomePlayer();
         registration();
-        login();
+        login(); */
         playField();
-        result(winner, loser);
+        //result(winner, loser);
     }
 
     /* gewonnen, verloren oder unentschieden */
@@ -70,8 +70,27 @@ public class VierGewinnt {
 
     public static void playField(){
         String field = "[ ]";
-        String chipRed = "[x] \u001B[31m";
-        String chipBlue = "[o] \u001B[34m";
-        System.out.println(chipBlue);
+        String chipRed = "[x]";
+        String chipBlue = "[o]";
+        int rows = 6;
+        int columns = 7;
+
+        String[][] playfield = new String[rows][columns];
+
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < columns; j++){
+                playfield[i][j] = field;
+            }
+        }
+
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < columns; j++){
+                System.out.print(playfield[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.print(" 1   2   3   4   5   6   7");
     }
+
 }
