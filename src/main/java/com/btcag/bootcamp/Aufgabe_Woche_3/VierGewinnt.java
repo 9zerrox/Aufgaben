@@ -21,11 +21,12 @@ public class VierGewinnt {
         welcomePlayer();
         registration();
         login();
-                playField();
-                userMoveRed();
-                userMoveBlue();
-            checkWinner();
-
+        while (true){
+        playField();
+        userMoveRed();
+        userMoveBlue();}
+        //fullRow();
+        //checkWinner();
         //result(winner, loser);
     }
 
@@ -158,6 +159,10 @@ public class VierGewinnt {
 
 
     public static void checkWinner(){
+
+    }
+
+    public static void fullRow(){
 
     }
 }

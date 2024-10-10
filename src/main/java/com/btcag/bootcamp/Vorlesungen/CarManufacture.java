@@ -1,4 +1,4 @@
 package com.btcag.bootcamp;
 
-public class NewThings {
+public class CarManufacture {
 }

@@ -29,7 +29,7 @@ public class PrimeTest {
 
         int n = 0;
         while (n < 1){
-            int sum = char
+       //     int sum = char
         }
 
     }
