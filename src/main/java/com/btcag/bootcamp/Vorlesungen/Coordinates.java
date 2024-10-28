@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Vorlesungen;
 
 public class Coordinates {
     int x;

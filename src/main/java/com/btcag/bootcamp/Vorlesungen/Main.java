@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Vorlesungen;
 
 public class Main {
     public static void main(String[] args) {

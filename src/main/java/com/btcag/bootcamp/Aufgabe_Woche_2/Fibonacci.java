@@ -1,6 +1,5 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Aufgabe_Woche_2;
 
-import javax.sound.midi.SysexMessage;
 import java.util.Scanner;
 
 public class Fibonacci {

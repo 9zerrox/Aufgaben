@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class VierGewinnt {
     Boolean winner;
@@ -50,3 +50,4 @@ public class VierGewinnt {
 
 
 }
+*/

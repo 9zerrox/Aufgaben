@@ -1,8 +1,6 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Vorlesungen;
 
-import javax.lang.model.type.IntersectionType;
-
-public class GiroKonto extends Account{
+public class GiroKonto extends Account {
     final static  double INTEREST = 0.02;
 
     int saldo = 2;

@@ -1,4 +1,5 @@
 package com.btcag.bootcamp.Vorlesungen;
 
-public class CarManufacture {
+public class Einwohner {
+
 }

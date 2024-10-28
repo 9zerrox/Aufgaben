@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+/*package com.btcag.bootcamp.Vorlesungen;
 
 public class Car {
         String manufacture = "BMW";
@@ -24,3 +24,4 @@ public class Car {
             return this.manufacture;
     }
 }
+*/

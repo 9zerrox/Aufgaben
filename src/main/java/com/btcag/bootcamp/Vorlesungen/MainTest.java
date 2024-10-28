@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+/*package com.btcag.bootcamp.Vorlesungen;
 
 public class MainTest {
     public static void main(String[] args) {
@@ -7,3 +7,4 @@ public class MainTest {
         System.out.println("");
     }
 }
+*/

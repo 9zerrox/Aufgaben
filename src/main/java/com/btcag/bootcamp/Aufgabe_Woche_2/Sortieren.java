@@ -1,6 +1,4 @@
-package com.btcag.bootcamp;
-
-import java.util.Scanner;
+package com.btcag.bootcamp.Aufgabe_Woche_2;
 
 public class Sortieren {
     public static void main(String[] args) {
