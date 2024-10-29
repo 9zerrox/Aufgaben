@@ -4,6 +4,6 @@ public interface Interface {
     int popFront();
     int popLast();
     int pushLast();
-    int pushFront();
+    int pushFront(int i);
     int get(int i);
 }

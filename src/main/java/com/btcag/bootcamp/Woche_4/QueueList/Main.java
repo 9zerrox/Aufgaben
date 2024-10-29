@@ -1,5 +1,6 @@
 package com.btcag.bootcamp.Woche_4.QueueList;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main{
@@ -11,11 +12,13 @@ public class Main{
                 "4: fügt dieses Element den Daten am Anfang hinzu \n" +
                 "5: gibt an Stelle i das Element zurück, entfernt es aber nicht \n");
 
-        QueueList list = new QueueList();
+
+
 
         Scanner readIn = new Scanner(System.in);
         int select = readIn.nextInt();
-        int i = readIn.nextInt();
+        QueueList list = new QueueList();
+
 
         if (select == 1){
             list.popFront();
@@ -28,13 +31,17 @@ public class Main{
         }
 
         else if (select == 3) {
-            list.pushFront();
-            System.out.println("Das Element " + i + "wurde hinzugefügt");
+            int number = readIn.nextInt();
+            list.pushFront(number);
+            System.out.println("Das Element " + number + "wurde hinzugefügt");
+            System.out.println("So sieht das neue Array aus: " + Arrays.toString(list.getArray()));
         }
 
         else if (select == 4) {
-            list.pushLast();
-            System.out.println("Das Element " + i + "wurde hinzugefügt");
+            int number = readIn.nextInt();
+            list.pushLast(number);
+            System.out.println("Das Element " + number + "wurde hinzugefügt");
+            System.out.println("So sieht das neue Array aus: " + Arrays.toString(list.getArray()));
         }
 
         else if (select == 5) {
