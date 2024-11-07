@@ -8,7 +8,7 @@ public class Main{
 
 
         System.out.println(
-                "1: gibt das erste Element zurück und löscht dieses von den Daten \n" +
+                        "1: gibt das erste Element zurück und löscht dieses von den Daten \n" +
                         "2: gibt das letzte Element zurück und entfernt dieses von den Daten \n" +
                         "3: fügt dieses Element den Daten am Ende hinzu \n" +
                         "4: fügt dieses Element den Daten am Anfang hinzu \n" +
@@ -52,8 +52,9 @@ public class Main{
         }
 
         else if (select == 5) {
-            list.get(select);
-            System.out.println(select);
+            int number = readIn.nextInt();
+            list.get(number);
+            System.out.println(Arrays.toString(list.getArray()));
         }
     }
 }

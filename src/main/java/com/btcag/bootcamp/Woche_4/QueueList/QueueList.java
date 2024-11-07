@@ -76,6 +76,10 @@ public class QueueList implements Interface{
 
     @Override
     public int get(int i) {
+        System.out.println(Arrays.toString(array));
+        int[] newArray = new int[]{array[i - 1]};
+
+        this.array = newArray;
         return 0;
     }
 
