@@ -1,13 +1,14 @@
 package com.btcag.bootcamp.Woche_4.QueueList;
 
+import java.util.Arrays;
+
 public class QueueList implements Interface{
 
     private int size;
-    private int[] array;
+    private int[] array = {1, 2, 3, 4, 5};
 
     public QueueList(){
-        this.size = 1;
-        this.array = new int[1];
+        this.size = 6;
     }
 
     private int[] chooseArrayRightSize(){
@@ -32,14 +33,20 @@ public class QueueList implements Interface{
     }
 
     @Override
-    public int popLast() {
-        return 0;
+    public void popLast() {
+        System.out.println(Arrays.toString(array));
+        int[] newArray = new int[array.length - 1];
+
+        for (int i = 0; i < newArray.length; i++){
+            newArray[i] = array[i];
+        }
+        this.array = newArray;
     }
 
     @Override
     public int pushLast(int i) {
         int[] test = chooseArrayRightSize();
-        int position = 1;
+        int position = 0;
         int[] newArray = new int[test.length];
         for (int number : test){
             newArray[position] = number;

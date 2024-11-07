@@ -1,4 +1,4 @@
-package com.btcag.bootcamp.Woche_4;
+package com.btcag.bootcamp.Woche_4.aufgaben;
 
 import java.util.Scanner;
 
