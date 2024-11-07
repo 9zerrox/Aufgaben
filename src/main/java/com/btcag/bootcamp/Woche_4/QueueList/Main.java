@@ -27,12 +27,13 @@ public class Main{
 
         if (select == 1){
             list.popFront();
-            System.out.println("Das Element " + select + "wurde entfernt");
+            System.out.println("Das Element 1 wurde entfernt");
+            System.out.println("So sieht das neue Array aus: " + Arrays.toString(list.getArray()));
         }
 
         else if (select == 2) {
             list.popLast();
-            System.out.println("Das Element " + select + " wurde entfernt");
+            System.out.println("Das Element 5 wurde entfernt");
             System.out.println("So sieht das neue Array aus: " + Arrays.toString(list.getArray()));
         }
 

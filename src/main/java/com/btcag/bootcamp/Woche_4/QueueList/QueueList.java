@@ -25,11 +25,14 @@ public class QueueList implements Interface{
     }
 
     @Override
-    public int popFront() {
+    public void popFront() {
+        System.out.println(Arrays.toString(array));
+        int[] newArray = new int[array.length - 1];
 
-
-        return 0;
-
+        for (int i = 0; i < newArray.length; i++){
+            newArray[i] = array[i + 1];
+        }
+        this.array = newArray;
     }
 
     @Override
