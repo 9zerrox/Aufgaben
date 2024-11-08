@@ -1,89 +1,87 @@
 package com.btcag.bootcamp.Woche_4.QueueList;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class QueueList implements Interface{
 
     private int size;
-    private int[] array = {1, 2, 3, 4, 5};
+    private int[] array;
 
     public QueueList(){
-        this.size = 6;
+        this.size = 0;
+        array = new int[5];
     }
 
-    private int[] chooseArrayRightSize(){
-        if (array.length +1 == size){
-            int[] tempArray = new int[size*2];
-            int counter = 0;
-            for (int i : array ){
-                tempArray[counter] = i;
-                counter++;
+    @Override
+    public String toString() {
+        String s = "[";
+        for (int i = 0; i < size; i++){
+            s += array[i];
+            if (i < size-1){
+                s += ", ";
             }
-            return tempArray;
         }
-        return array;
+        s += "]";
+        return s;
+    }
+
+
+    private void chooseArrayRightSize(){
+        if (size + 1 == array.length){
+            int[] tempArray = new int[size*2];
+            for (int i = 0; i < array.length; i++){
+                tempArray[i] = array[i];
+            }
+            this.array = tempArray;
+        }
     }
 
     @Override
-    public void popFront() {
-        System.out.println(Arrays.toString(array));
-        int[] newArray = new int[array.length - 1];
-
-        for (int i = 0; i < newArray.length; i++){
-            newArray[i] = array[i + 1];
+    public int popFront() {
+        if (size < 1){
+            return -1;
         }
-        this.array = newArray;
+        int temp = array[0];
+        for (int i = 1; i < this.size; i++){
+            array[i - 1] = array[i];
+        }
+        size--;
+        return temp;
     }
 
     @Override
-    public void popLast() {
-        System.out.println(Arrays.toString(array));
-        int[] newArray = new int[array.length - 1];
-
-        for (int i = 0; i < newArray.length; i++){
-            newArray[i] = array[i];
+    public int popLast() {
+        if (size < 1){
+            return -1;
         }
-        this.array = newArray;
+        return array[--size];
     }
 
     @Override
     public int pushLast(int i) {
-        int[] test = chooseArrayRightSize();
-        int position = 0;
-        int[] newArray = new int[test.length];
-        for (int number : test){
-            newArray[position] = number;
-            position--;
-        }
-        newArray[1] = i;
-        this.array = newArray;
-        return 0;
+        chooseArrayRightSize();
+        array[size] = i;
+        return size++;
     }
 
     @Override
     public int pushFront(int i) {
-        int[] test = chooseArrayRightSize();
-        int position = 1;
-        int[] newArray = new int[test.length];
-        for (int number : test){
-            newArray[position] = number;
-            position++;
+        chooseArrayRightSize();
+        for (int j = size; j > 0; j-- ){
+            array[j] = array[j - 1];
         }
-        newArray[0] = i;
-        this.array = newArray;
+        array[0] = i;
+        size++;
         return 0;
     }
+
 
     @Override
     public int get(int i) {
-        System.out.println(Arrays.toString(array));
-        int[] newArray = new int[]{array[i - 1]};
-
-        this.array = newArray;
-        return 0;
-    }
-
-    public int[] getArray(){
-        return this.array;
+        if (i >= size){
+            return -1;
+        }
+        return array[i];
     }
 }
