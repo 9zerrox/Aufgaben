@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
 
         QueueList list = new QueueList();
-        while (true) {
+
+        int select;
+        do {
 
 
             System.out.println(
@@ -15,17 +17,17 @@ public class Main {
                             "2: gibt das letzte Element zurück und entfernt dieses von den Daten \n" +
                             "3: fügt dieses Element den Daten am Anfang hinzu \n" +
                             "4: fügt dieses Element den Daten am Ende hinzu \n" +
-                            "5: gibt an Stelle i das Element zurück, entfernt es aber nicht \n");
+                            "5: gibt an Stelle i das Element zurück, entfernt es aber nicht \n" +
+                            "0: Beende das Programm \n");
 
 
             Scanner readIn = new Scanner(System.in);
 
 
-
             System.out.println("So sieht das aktuelle Array aus: " + list);
 
 
-            int select = readIn.nextInt();
+            select = readIn.nextInt();
 
 
             if (select == 1) {
@@ -49,6 +51,6 @@ public class Main {
             }
 
             System.out.println("So sieht das neue Array aus: " + list);
-        }
+        } while (select != 0);
     }
 }
